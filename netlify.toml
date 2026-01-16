@@ -1,0 +1,11 @@
+[build]
+  # Folder yang berisi index.html Anda
+  publish = "public"
+  
+  # Karena ini aplikasi statis sederhana, kita tidak butuh build command
+  command = ""
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
