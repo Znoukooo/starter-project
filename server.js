@@ -27,7 +27,7 @@ app.listen(PORT, () => {
     console.log(`🚀 Development server running at http://localhost:${PORT}`);
     console.log(`📁 Serving files from: ${path.join(__dirname, 'public')}`);
     console.log(`\n📖 Ready for development!`);
-    console.log(`\n🛑 Press Ctrl+C to stop the server`);
+    console.log(`\nPress Ctrl+C to stop the server`);
 });
 
 // Graceful shutdown
