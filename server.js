@@ -11,26 +11,6 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Implement security middleware
-const { SecurityConfig } = require('./security-config');
-
-const security = new SecurityConfig({
-    corsOrigins: ['https://yourdomain.com'],
-    rateLimitMax: 100,
-    sessionSecret: process.env.SESSION_SECRET
-});
-
-app.use(security.getAllMiddleware().helmet);
-app.use(security.getAllMiddleware().rateLimiter);
-
-// Environment configuration
-const EnvironmentConfig = require('./environment-config');
-const config = new EnvironmentConfig();
-
-// Use configuration throughout the app
-const port = config.get('server.port');
-const dbUrl = config.get('database.url');
-
 // Serve static files from public directory
 app.use(express.static(path.join(__dirname, 'public')));
 
