@@ -891,3 +891,15 @@ html {
         opacity: 1;
     }
 }
+
+/* Button Improvements - Version 1 */
+.btn-primary {
+    background-color: #667eea;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-radius: 8px;
+}
