@@ -892,14 +892,17 @@ html {
     }
 }
 
-/* Button Improvements - Version 1 */
+/* Button Styles - Combined */
 .btn-primary {
-    background-color: #667eea;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
     border-radius: 8px;
     font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .btn-secondary {
-    background-color: #6c757d;
+    background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+    border: none;
     border-radius: 8px;
 }
